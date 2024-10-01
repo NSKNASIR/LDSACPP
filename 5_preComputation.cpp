@@ -84,27 +84,49 @@ using namespace std;
 // }
 
 //GCD
-int main(){
-    int t;cin>>t;
-    while(t--){
-        int n,q;cin>>n>>q;
-        int arr[n+10];
-        int ForwardGcd[n+10];
-        int BackwardGcd[n+10];
-        ForwardGcd[0]=BackwardGcd[n+1]=0;
-        for(int i=1;i<=n;i++){
-            cin>>arr[i];
-        }
-        for(int i=1;i<=n;i++){
-            ForwardGcd[i]=__gcd(ForwardGcd[i-1],arr[i]);
-        }
-        for(int i=n;i>=1;i--){
-            BackwardGcd[i]=__gcd(BackwardGcd[i+1],arr[i]);
-        }
-        while(q--){
-            int l,r;cin>>l>>r;
-            cout<<__gcd(ForwardGcd[l-1],BackwardGcd[r+1])<<endl;
-        }
+// int main(){
+//     int t;cin>>t;
+//     while(t--){
+//         int n,q;cin>>n>>q;
+//         int arr[n+10];
+//         int ForwardGcd[n+10];
+//         int BackwardGcd[n+10];
+//         ForwardGcd[0]=BackwardGcd[n+1]=0;
+//         for(int i=1;i<=n;i++){
+//             cin>>arr[i];
+//         }
+//         for(int i=1;i<=n;i++){
+//             ForwardGcd[i]=__gcd(ForwardGcd[i-1],arr[i]);
+//         }
+//         for(int i=n;i>=1;i--){
+//             BackwardGcd[i]=__gcd(BackwardGcd[i+1],arr[i]);
+//         }
+//         while(q--){
+//             int l,r;cin>>l>>r;
+//             cout<<__gcd(ForwardGcd[l-1],BackwardGcd[r+1])<<endl;
+//         }
 
-    }
-}
+//     }
+// }
+
+
+// const int N=1e7+10;
+// long long arr[N];
+// int  main(){
+//     int n,q;cin>>n>>q;
+
+//     while(q--){
+//         int a,b,k;cin>>a>>b>>k;
+//         arr[a]+=k;
+//         arr[b+1]-=k;
+//     }
+//     for(int i=1;i<=n;i++){
+//         arr[i]+=arr[i-1];
+//     }
+//     long long mx=-1;
+//     for(int i=0;i<n;i++){
+//         if(mx < arr[i])mx=arr[i];
+//     }
+//     cout<<mx;
+// }
+

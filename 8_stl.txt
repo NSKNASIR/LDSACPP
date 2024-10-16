@@ -1,0 +1,45 @@
+* Containers
+* Iterators
+* Algorithms
+* Functors
+
+1.containers:
+    i.Sequential:
+        * Vectors
+        * Stack
+        * queue
+        * Pair ( not a containers)
+    ii.Ordered:
+        * Maps
+        * Multimap
+        * Set 
+        * Multiset
+    iii.Unordered:
+        * Unordered Maps
+        * Unordered Set
+
+2.Nested Containers:
+    * vector<vector<int>>
+    * map<int,vector<int>>
+    * set<pair<int,string>>
+    * vector<map<int,set<int>>>
+3.Iterators:
+    * Point to memory address of cintainers.
+    * begin() , end().
+    * vector<int> :: iterators it;
+    * continuity for containers.
+
+4.Algorithms:
+    * upper bound
+    * Lower bound
+    * sort (comparator)
+    * max -element
+    * min - element
+    * acumulate
+    * reverse
+    * count 
+    * find
+    * next permatations
+    * prev_permatations
+5.Functors:
+    * class which can act as functions.

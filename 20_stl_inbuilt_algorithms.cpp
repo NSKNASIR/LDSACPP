@@ -14,11 +14,11 @@ int main(){
 
     //lambda function
     cout<<[](int x,int y){return x+y;}(2,3);
-    auto sum = [](int x,int y){
+    auto s = [](int x,int y){
         cout<<"This is lambda function"<<endl;
         return x+y;
     };
-    cout<<sum(2,3);
+    cout<<s(2,3);
 
     vector<int> v = {2,3,4};
     

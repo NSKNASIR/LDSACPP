@@ -18,6 +18,6 @@ int main(){
         }else if(v[mid] < key) fast = mid+1;
         else last = mid -1;
     }
-    if(ans) cout<<"value is found at index "<<mid;
+    if(ans) cout<<"value is found at index: "<<mid;
     else cout<<"value is not found";
 }

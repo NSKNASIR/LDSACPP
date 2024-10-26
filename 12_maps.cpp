@@ -8,15 +8,15 @@ int main(){
     m[3]="ecf";
     m[2]="mno";
     m[6]; // stored empty string.
-    // cout<<m[1];
+    cout<<m[1];
     m.insert({5,"abc"});
 
-    // map<int,string> ::iterator it = m.begin();
+    map<int,string> ::iterator it = m.begin();
 
-    // for(it; it != m.end();it++) cout<<it->first<<" "<<it->second<<endl;
-    // for(auto & pr : m) cout<<pr.first<<" "<<pr.second<<endl;
+    for(it; it != m.end();it++) cout<<it->first<<" "<<it->second<<endl;
+    for(auto & pr : m) cout<<pr.first<<" "<<pr.second<<endl;
     
-    // cout<<m.size();
+    cout<<m.size();
 
     auto it = m.find(2); // its return iterator. O(log(n)) 
 

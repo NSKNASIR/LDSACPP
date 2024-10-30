@@ -6,6 +6,7 @@ int n;
 long long m;
 long long arr[N];
 
+//predicate function = F F F F T T T T T T
 bool isS(long long h){
     long long wood=0;
     for(int i=0;i<n;++i) if(arr[i] >=h) wood+=arr[i]-h;

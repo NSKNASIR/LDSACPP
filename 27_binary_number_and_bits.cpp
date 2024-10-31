@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//print binary number
 void printBinary(int n){
     for(int i=10;i>=0;--i) cout<<((n>>i) & 1);
     cout<<endl;

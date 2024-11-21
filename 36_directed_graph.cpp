@@ -9,16 +9,16 @@ vector<int> Graph[N];
 int main(){
     int n;cin>>n;
 
-    // for(int i=1;i<=n;i++){
-    //     int a,b;cin>>a>>b;
-    //     graph[a][b]=1;
-    // }
-    // cout<<endl;
-    // for(int i=1;i<=n;i++){
-    //     for(int j=1;j<=n;j++){
-    //         if(graph[i][j]) cout<<i<<" "<<j<<endl;
-    //     }
-    // }
+    for(int i=1;i<=n;i++){
+        int a,b;cin>>a>>b;
+        graph[a][b]=1;
+    }
+    cout<<endl;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            if(graph[i][j]) cout<<i<<" "<<j<<endl;
+        }
+    }
 
     for(int i=1;i<=n;++i){
         int a,b;cin>>a>>b;
